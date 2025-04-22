@@ -4,6 +4,7 @@ var btn = document.querySelector('button');
 console.log(input);
 // http://api.weatherapi.com/v1/forecast.json?key=e5e884ed3d074c9580984541252104&q=${key}&days=3
 //https://api.weatherapi.com/v1/search.json?key=e5e884ed3d074c9580984541252104&q=${key}
+// 4f946241e3a74a7e8d3125359252004
 
 async function fetchData(key) {
     //var response= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=e5e884ed3d074c9580984541252104&q=${key}&days=3`);
