@@ -6,7 +6,8 @@ console.log(input);
 //https://api.weatherapi.com/v1/search.json?key=e5e884ed3d074c9580984541252104&q=${key}
 
 async function fetchData(key) {
-    var response= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=e5e884ed3d074c9580984541252104&q=${key}&days=3`);
+    //var response= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=e5e884ed3d074c9580984541252104&q=${key}&days=3`);
+    var response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=4f946241e3a74a7e8d3125359252004&q=${key}&days=3`);
     data = await response.json();
     console.log(data);
     displayData(data);  
@@ -69,7 +70,7 @@ function displayData(data) {
                   <p class="card-text text-muted fs-5">${data.location.name}</p>
                   <h1 class="card-title display-1">${Day[0].day.avgtemp_f}</h1>
                   <p class="card-text text-muted fs-5">${Day[0].day.avgtemp_c}</p>
-                  <img src="${Day[0].day.condition.icon}" >
+                  <img src="https:${Day[0].day.condition.icon}" >
                   <p class="text-primary">${Day[0].day.condition.text}</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-center gap-3 p-2">
@@ -97,7 +98,7 @@ function displayData(data) {
                 <div class="card-body p-5 text-center">
                   <h1 class="card-title display-1">${Day[1].day.avgtemp_f}</h1>
                   <p class="card-text text-muted fs-5">${Day[1].day.avgtemp_c}</p>
-                  <img src="${Day[1].day.condition.icon}" >
+                  <img src="https:${Day[1].day.condition.icon}" >
                   <p class="text-primary">${Day[1].day.condition.text}</p>
                 </div>
         `
@@ -111,7 +112,7 @@ function displayData(data) {
                 <div class="card-body p-5 text-center">
                   <h1 class="card-title display-1">${Day[2].day.avgtemp_f}</h1>
                   <p class="card-text text-muted fs-5">${Day[2].day.avgtemp_c}</p>
-                  <img src="${Day[2].day.condition.icon}" >
+                  <img src="https:${Day[2].day.condition.icon}" >
                   <p class="text-primary">${Day[2].day.condition.text}</p>
                 </div>
         ` 
