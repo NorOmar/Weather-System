@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.page {
+    background-color: #1e202b;
+    height: 100vh;
+}
+.landing {
+    background-image: url('./images/banner\ \(1\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;  
+}
+.landing .card {
+    background-color: #323544 !important;
+    color: white;
+}
+.landing .card .card-header {
+    background-color: #2d303d !important;
+}
+
+footer {
+    background-color: #1f2235;
+  }
+
+  .subscribe-input {
+    background-color: #191c2b;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px 0 0 25px;
+    width: 100%;
+  }
+
+  .subscribe-btn {
+    border-radius: 0 25px 25px 0;
+    background-color: #00bfff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+  }
+
+  .social-icons a {
+    background-color: #191c2b;
+    color: #00bfff;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .social-icons a:hover {
+    background-color: #00bfff;
+    color: white;
+  }
+
+  .footer-text {
+    color: #aaa;
+    font-size: 0.9rem;
+  }
+
+
+  

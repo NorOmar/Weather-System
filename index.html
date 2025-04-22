@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/f4a02b1ea6.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="./images/logo (4).png" alt=""> <h2 class="fs-4">Weather</h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Here</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1"">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Landing -->
+       <section class="page">
+        <section class="landing">
+          <div class="mx-auto w-50 p-5">
+            <input type="text" class="form-control w-100 rounded-3" id="search" placeholder="Find your location...">
+          </div>
+          <div class="d-flex flex-wrap justify-content-center mt-5">
+            <div class="row gx-5">
+              <div class="col-sm-6 col-md-4"><div class="card" id="onecard" style="width: 25rem;"></div></div>
+              <div class="col-sm-6 col-md-4"><div class="card h-100" id="twocard" style="width: 25rem;"></div></div>
+              <div class="col-sm-6 col-md-4"><div class="card h-100" id="threecard" style="width: 25rem;"></div></div>
+            </div>
+          </div>
+        </section>
+       </section> 
+       
+       <!-- Footer -->
+       <footer class="pt-4 pb-4">
+        <div class="container">
+          <div class="row justify-content-between align-items-center mb-3">
+            <!-- Email form -->
+            <div class="col-md-7 mb-3 mb-md-0">
+              <form class="d-flex">
+                <input type="email" class="subscribe-input" placeholder="Enter your email to subscribe..." />
+                <button class="subscribe-btn">Subscribe</button>
+              </form>
+            </div>
+      
+            <!-- Social icons -->
+            <div class="col-mt-4 text-md-end text-center">
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Footer Text -->
+          <div class="row mt-5">
+            <div class="col text-center">
+              <p class="footer-text mb-0">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+<!-- Footer -->
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
