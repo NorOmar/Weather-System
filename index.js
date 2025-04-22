@@ -6,7 +6,7 @@ console.log(input);
 //https://api.weatherapi.com/v1/search.json?key=e5e884ed3d074c9580984541252104&q=${key}
 
 async function fetchData(key) {
-    var response= await fetch(`http://api.weatherapi.com/v1/forecast.json?key=e5e884ed3d074c9580984541252104&q=${key}&days=3`);
+    var response= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=e5e884ed3d074c9580984541252104&q=${key}&days=3`);
     data = await response.json();
     console.log(data);
     displayData(data);  
