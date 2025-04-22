@@ -4,8 +4,9 @@ var btn = document.querySelector('button');
 console.log(input);
 // http://api.weatherapi.com/v1/forecast.json?key=e5e884ed3d074c9580984541252104&q=${key}&days=3
 //https://api.weatherapi.com/v1/search.json?key=e5e884ed3d074c9580984541252104&q=${key}
+
 async function fetchData(key) {
-    var response=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=e5e884ed3d074c9580984541252104&q=${key}&days=3`);
+    var response= await fetch(`http://api.weatherapi.com/v1/forecast.json?key=e5e884ed3d074c9580984541252104&q=${key}&days=3`);
     data = await response.json();
     console.log(data);
     displayData(data);  
@@ -20,7 +21,26 @@ input.addEventListener('input',function(){
     
 })
 
-fetchData('mansoura');
+function getUserLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      function(position) {
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
+        fetchData(`${lat},${lon}`);
+      },
+      function() {
+        console.log("Location blocked, using default.");
+        fetchData("Cairo");
+      }
+    );
+  } else {
+    fetchData("Cairo");
+  }
+}
+
+getUserLocation();
+
 function displayData(data) {
     var cartona1='';
     var cartona2='';
